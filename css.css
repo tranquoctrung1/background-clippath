@@ -1,0 +1,36 @@
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    background: #468189
+}
+.content
+{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100vw;
+    height: 100vh;
+    text-align: center; 
+    font-size: 1.1rem;
+    color: #F4E9CD;
+    position: relative;
+    overflow: hidden;
+}
+
+.content::before
+{
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #031926;
+    clip-path: circle(50% at 50% 1%);
+    z-index: -1;
+    transform: scale(1.5)
+}
